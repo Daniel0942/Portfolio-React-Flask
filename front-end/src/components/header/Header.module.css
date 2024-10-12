@@ -1,0 +1,14 @@
+.icones_logo ul li, .menu ul li {
+    display: inline-block;
+}
+
+.icones_logo ul li svg {
+    font-size: 70px;
+}
+.menu ul li{
+    margin: 15% 5px;
+}
+.contato {
+    margin-top: 2%;
+}
+
