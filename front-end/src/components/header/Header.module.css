@@ -1,14 +1,36 @@
+/* Gerais */
+.container {
+    margin-top: 40px;
+}
 .icones_logo ul li, .menu ul li {
     display: inline-block;
 }
 
+/* Cores icones */
 .icones_logo ul li svg {
     font-size: 70px;
 }
-.menu ul li{
-    margin: 15% 5px;
+.icones_logo .js {
+    color: #f7df1e;
 }
-.contato {
-    margin-top: 2%;
+.icones_logo .react {
+    color: #61DAFB;
+}
+.icones_logo .python {
+    color: #3776AB;
+}
+.icones_logo .flask {
+    color: white;
 }
 
+/* Menu */
+.menu {
+    margin-top: 2%;
+}
+.menu ul li {
+    padding: 5px;
+    color: #ffffff9c;
+}
+.menu ul li:hover {
+    color: #ffffff;
+}

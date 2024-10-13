@@ -1,5 +1,5 @@
 .btn {
-    background-color: #00ff08;
+    background-color: #61dafbd4;
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -10,6 +10,6 @@
 }
 
 .btn:hover {
-    box-shadow: 0px 0px 8px #00ff08;
+    box-shadow: 0px 0px 8px #61DAFB;
     transform: scale(1.05);
 }

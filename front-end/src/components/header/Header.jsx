@@ -12,10 +12,10 @@ function Header() {
             <Interface estilo1="flex" estilo2="space-between">
                 <nav className={styles.icones_logo}>
                     <ul>
-                        <li><FaReact/></li>
-                        <li><DiJavascript /></li>
-                        <li><SiFlask/></li>
-                        <li><FaPython/></li>
+                        <li><FaReact className={styles.react}/></li>
+                        <li><DiJavascript className={styles.js}/></li>
+                        <li><SiFlask className={styles.flask}/></li>
+                        <li><FaPython className={styles.python}/></li>
                     </ul>
                 </nav>
 
