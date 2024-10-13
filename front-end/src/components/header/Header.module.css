@@ -1,6 +1,7 @@
 /* Gerais */
 .container {
     margin-top: 40px;
+    padding: 40px;
 }
 .icones_logo ul li, .menu ul li {
     display: inline-block;
@@ -26,11 +27,12 @@
 /* Menu */
 .menu {
     margin-top: 2%;
-}
-.menu ul li {
-    padding: 5px;
-    color: #ffffff9c;
-}
-.menu ul li:hover {
-    color: #ffffff;
+
+    & ul li {
+        padding: 5px;
+        color: #ffffff9c; 
+    }
+    & ul li:hover {
+        color: #ffffff;
+    }
 }

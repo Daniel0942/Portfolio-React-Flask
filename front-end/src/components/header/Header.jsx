@@ -22,7 +22,7 @@ function Header() {
                 <nav className={styles.menu}>
                     <ul>
                         <li>Inicio</li>
-                        <li>Especialidade</li>
+                        <li>Especialidades</li>
                         <li>Sobre</li>
                         <li>Projetos</li>
                     </ul>

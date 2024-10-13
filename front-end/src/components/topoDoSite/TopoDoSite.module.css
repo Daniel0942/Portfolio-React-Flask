@@ -1,0 +1,17 @@
+/* txt */
+.topoDoSite .caixa_txt {
+    width: 1000px;
+    height: 215px;
+    margin-top: 50px;
+
+    & h1 {
+        font-size: 25px;
+    }
+
+    & h1, p, button {
+        margin-top: 25px;
+    }
+    & span {
+        color: #61DAFB;
+    }
+}

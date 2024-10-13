@@ -1,8 +1,14 @@
+import Especialidades from "./components/especialidades/Especialidades";
 import Header from "./components/header/Header";
+import TopoDoSite from "./components/topoDoSite/TopoDoSite";
 
 function App() {
   return (
-    <Header/>
+    <>
+      <Header/>
+      <TopoDoSite/>
+      <Especialidades/>
+    </>
   )
 }
 
