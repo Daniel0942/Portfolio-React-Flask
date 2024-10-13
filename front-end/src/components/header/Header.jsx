@@ -8,7 +8,7 @@ import Button from "../utilidades/Button"
 
 function Header() {
     return (
-        <header className={styles.container}>
+        <header className={styles.container} id="inicio">
             <Interface estilo1="flex" estilo2="space-between">
                 <nav className={styles.icones_logo}>
                     <ul>
@@ -21,15 +21,15 @@ function Header() {
 
                 <nav className={styles.menu}>
                     <ul>
-                        <li>Inicio</li>
-                        <li>Especialidades</li>
-                        <li>Sobre</li>
-                        <li>Projetos</li>
+                        <a href="#inicio"><li>Inicio</li></a>
+                        <a href="#especialidades"><li>Especialidades</li></a>
+                        <a href="#sobre"><li>Sobre</li></a>
+                        <a href="#projetos"><li>Projetos</li></a>
                     </ul>
                 </nav>
 
                 <div className={styles.contato}>
-                    <a href="#">
+                    <a href="https://wa.me/5579996746102" target="blank">
                         <Button txt="Contato"/>
                     </a>
                 </div>

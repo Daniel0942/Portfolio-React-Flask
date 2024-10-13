@@ -7,14 +7,20 @@ import { FaLinkedin } from "react-icons/fa"
 
 function Sobre() {
     return (
-        <section className={styles.sobre}>
+        <section className={styles.sobre} id="sobre">
             <Interface estilo2="margin-top">
                 <div className={styles.caixa_txt}>
                     <h2>MUITO PRAZER,<br/><span>SOU DANIEL BOMFIM.</span></h2>
                     <p>Desenvolvedor Full Stack com experiência em React.js para o front-end e Flask (Python) no back-end. Especializado em manipulação de dados com SQLite3. Experiência em criação de aplicações web responsivas, integração de APIs e uso de Git/GitHub para controle de versão.</p>
-                    <Button txt={ <FaWhatsapp/> }/>
-                    <Button txt={ <FaGithub/> }/>
-                    <Button txt={ <FaLinkedin/> }/>
+                    <a href="https://wa.me/5579996746102">
+                        <Button txt={ <FaWhatsapp/> }/>
+                    </a>
+                    <a href="https://github.com/Daniel0942">
+                        <Button txt={ <FaGithub/> }/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-bomfim-219196230/">
+                        <Button txt={ <FaLinkedin/> }/>
+                    </a>
                 </div>
             </Interface>
         </section>

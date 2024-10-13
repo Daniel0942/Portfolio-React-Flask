@@ -7,7 +7,7 @@ import styles from "./Especialidades.module.css"
 
 function Especialidades() {
     return (
-        <section className={styles.especialidades}>
+        <section className={styles.especialidades} id="especialidades">
             <h1>Minhas <span>Especialidades.</span></h1>
             <Interface estilo1="flex">
                 <div className={styles.box}>

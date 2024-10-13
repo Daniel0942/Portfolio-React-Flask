@@ -9,7 +9,7 @@
 
 /* Cores icones */
 .icones_logo ul li svg {
-    font-size: 70px;
+    font-size: 80px;
 }
 .icones_logo .js {
     color: #f7df1e;
@@ -34,5 +34,81 @@
     }
     & ul li:hover {
         color: #ffffff;
+    }
+}
+
+
+/* animação de embaralhamento */
+.react, .js, .flask, .python {
+    position: relative;
+    animation: 2s reverse  ease-in-out 1;
+}
+
+.react {
+    animation-name: left-top;
+}
+.js {
+    animation-name: left-bottom;
+}
+.flask {
+    animation-name: right-top;
+}
+.python {
+    animation-name: right-bottom;
+}
+
+/* Animação para mover na diagonal superior esquerda */
+@keyframes left-top {
+    0% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);  /* Gira completamente */
+        top: -50px; /* Mover para cima */
+        left: -50px; /* Mover para a esquerda */
+    }
+}
+
+/* Animação para mover na diagonal inferior esquerda */
+@keyframes left-bottom {
+    0% {
+        bottom: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        bottom: -50px; /* Mover para baixo */
+        left: -50px; /* Mover para a esquerda */
+    }
+}
+
+/* Animação para mover na diagonal superior direita */
+@keyframes right-top {
+    0% {
+        top: 0;
+        right: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: -50px; /* Mover para cima */
+        right: -50px; /* Mover para a direita */
+        transform: rotate(360deg);
+    }
+}
+
+/* Animação para mover na diagonal inferior direita */
+@keyframes right-bottom {
+    0% {
+        right: 0;
+        bottom: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        right: -50px; /* Mover para a direita */
+        bottom: -50px; /* Mover para baixo */
+        transform: rotate(360deg);
     }
 }
