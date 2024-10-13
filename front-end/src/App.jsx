@@ -1,4 +1,5 @@
 import Especialidades from "./components/especialidades/Especialidades";
+import Formulario from "./components/formulario/Formulario";
 import Header from "./components/header/Header";
 import Projetos from "./components/projetos/Projetos";
 import Sobre from "./components/sobre/Sobre";
@@ -12,6 +13,7 @@ function App() {
       <Especialidades/>
       <Sobre/>
       <Projetos/>
+      <Formulario/>
     </>
   )
 }
