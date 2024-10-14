@@ -15,8 +15,8 @@ function Projetos() {
                     style={{ backgroundImage: `url(${listaDeTarefasImg})`}}>
                         <div className={styles.overlay}>Projeto 1</div>
                     </div>
-                    <a href="https://github.com/Daniel0942/Lista-de-Tarefas-React.js" target="blank"><Button txt="Repositório"/></a>
-                    <a href="https://daniel0942.github.io/Lista-de-Tarefas-React.js/" target="blank"><Button txt="Site"/></a>
+                    <a href="https://github.com/Daniel0942/Lista_de_tarefas_React.js" target="blank"><Button txt="Repositório"/></a>
+                    <a href="https://lista-de-tarefas-react-js-seven.vercel.app/" target="blank"><Button txt="Site"/></a>
                 </div>
 
                 <div className={styles.container}>
@@ -26,8 +26,7 @@ function Projetos() {
                         <div className={styles.overlay}>Projeto 1</div>
                     </div>
                     <a href="https://github.com/Daniel0942/Ceu_Noturno_Mistico" target="blank"><Button txt="Repositório"/></a>
-                    <a href="https://daniel0942.github.io/Ceu_Noturno_Mistico/" target="blank"><Button txt="Site"/></a>
-                    
+                    <a href="https://ceu-noturno-mistico.vercel.app" target="blank"><Button txt="Site"/></a>
                 </div>
             </Interface>
         </section>
