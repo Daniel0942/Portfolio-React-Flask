@@ -21,24 +21,26 @@
 }
 
 /* ajustando icones_logo */
-.icones_logo ul li {
-    display: inline-block;
-}
+.icones_logo {
+    & ul li {
+        display: inline-block;
+        & svg {
+            font-size: 80px;
+            &:
+        }
+        /* cores dos icones */
+        .js {
+            color: #f7df1e;
+        }
+        .react {
+            color: #61DAFB;
+        }
+        .python {
+            color: #3776AB;
+        }
+        .flask {
+            color: white;
+        }
 
-/* Cores icones */
-.icones_logo ul li svg {
-    font-size: 80px;
+    } 
 }
-.icones_logo .js {
-    color: #f7df1e;
-}
-.icones_logo .react {
-    color: #61DAFB;
-}
-.icones_logo .python {
-    color: #3776AB;
-}
-.icones_logo .flask {
-    color: white;
-}
-
