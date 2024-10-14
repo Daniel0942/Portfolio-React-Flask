@@ -9,3 +9,8 @@ body {
   background-color: black;
   color: white;
 }
+
+/* rolagem suave ao navegar por âncoras dentro de uma página */
+html {
+  scroll-behavior: smooth;
+}

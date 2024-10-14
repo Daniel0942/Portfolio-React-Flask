@@ -12,13 +12,13 @@ function Sobre() {
                 <div className={styles.caixa_txt}>
                     <h2>MUITO PRAZER,<br/><span>SOU DANIEL BOMFIM.</span></h2>
                     <p>Desenvolvedor Full Stack com experiência em React.js para o front-end e Flask (Python) no back-end. Especializado em manipulação de dados com SQLite3. Experiência em criação de aplicações web responsivas, integração de APIs e uso de Git/GitHub para controle de versão.</p>
-                    <a href="https://wa.me/5579996746102">
+                    <a href="https://wa.me/5579996746102" target="blank">
                         <Button txt={ <FaWhatsapp/> }/>
                     </a>
-                    <a href="https://github.com/Daniel0942">
+                    <a href="https://github.com/Daniel0942" target="blank">
                         <Button txt={ <FaGithub/> }/>
                     </a>
-                    <a href="https://www.linkedin.com/in/daniel-bomfim-219196230/">
+                    <a href="https://www.linkedin.com/in/daniel-bomfim-219196230/" target="blank">
                         <Button txt={ <FaLinkedin/> }/>
                     </a>
                 </div>
