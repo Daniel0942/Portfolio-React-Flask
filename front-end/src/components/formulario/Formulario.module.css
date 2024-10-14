@@ -1,5 +1,6 @@
 .formulario {
     margin-top: 40px;
+    padding: 40px 0;
 
     & h2 {
     text-align: center;

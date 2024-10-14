@@ -1,6 +1,7 @@
 /* ajustando o rodape*/
 .rodape {
-    margin: 40px 0;
+    margin-top: 40px;
+    padding: 40px 0;
     box-shadow: 0px 0px 40px 10px #ffffff2a;
 
     & .icones_logo, .icones_link, .icones_email {

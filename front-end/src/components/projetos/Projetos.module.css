@@ -1,6 +1,8 @@
 /* projetos */
 .projetos {
     margin-top: 40px;
+    padding: 80px 0;
+    box-shadow: 0px 0px 40px 10px #ffffff2a;
 
     & h2 {
         text-align: center;
