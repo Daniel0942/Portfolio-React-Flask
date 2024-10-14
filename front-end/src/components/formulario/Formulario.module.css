@@ -27,6 +27,7 @@
                 border: 0;
                 border-radius: 10px;
                 font-size: 15px;
+                color: white;    /* Cor da letra quando digitar */
             }
             & textarea {
                 height: 50px;
