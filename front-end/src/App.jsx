@@ -1,4 +1,5 @@
 import Especialidades from "./components/especialidades/Especialidades";
+import Footer from "./components/footer/Footer";
 import Formulario from "./components/formulario/Formulario";
 import Header from "./components/header/Header";
 import Projetos from "./components/projetos/Projetos";
@@ -14,6 +15,7 @@ function App() {
       <Sobre/>
       <Projetos/>
       <Formulario/>
+      <Footer/>
     </>
   )
 }

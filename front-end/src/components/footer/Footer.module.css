@@ -1,0 +1,44 @@
+/* ajustando o rodape*/
+.rodape {
+    margin-top: 40px;
+
+    & .icones_logo, .icones_link, .icones_email {
+        padding: 20px 0px;
+    }
+
+    & .linha {
+        border-top: 2px solid #61DAFB;
+    }
+    /* tirar decoração do link, ajustar icone do email  */
+    & .icones_email p a {
+        color: white;
+
+        & svg {
+            font-size: 30px;
+            color: #61DAFB;
+        }
+    }
+}
+
+/* ajustando icones_logo */
+.icones_logo ul li {
+    display: inline-block;
+}
+
+/* Cores icones */
+.icones_logo ul li svg {
+    font-size: 80px;
+}
+.icones_logo .js {
+    color: #f7df1e;
+}
+.icones_logo .react {
+    color: #61DAFB;
+}
+.icones_logo .python {
+    color: #3776AB;
+}
+.icones_logo .flask {
+    color: white;
+}
+
