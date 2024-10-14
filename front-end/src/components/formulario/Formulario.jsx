@@ -8,12 +8,13 @@ function Formulario() {
     }
     return (
         <section className={styles.formulario}>
-            <Interface estilo2="margin-top">
+            <h2>FALA <span>COMIGO.</span></h2>
+            <Interface>
                 <form onSubmit={Enviar}> {/* será aqui o evento */}
-                    <input type="text" placeholder="Seu nome Completo" name="nome" required/>
-                    <input type="text" placeholder="Seu e-mail" name="email" required/>
-                    <input type="number" placeholder="Seu contato" name="contato" required/>
-                    <textarea  placeholder="Sua mensagem" name="msg"></textarea>
+                    <input type="text" placeholder="Seu Nome Completo" name="nome" required/>
+                    <input type="text" placeholder="Seu E-mail" name="email" required/>
+                    <input type="number" placeholder="Seu Contato" name="contato" required/>
+                    <textarea  placeholder="Sua Mensagem" name="msg"></textarea>
                     <Button txt="Enviar"/>
                 </form>
             </Interface>

@@ -23,7 +23,7 @@ function Projetos() {
                     <div
                     className={`${styles.projeto_box} ${styles.segundo}`}
                     style={{ backgroundImage: `url(${ceunoturnomistico})`}}>
-                        <div className={styles.overlay}>Projeto 1</div>
+                        <div className={styles.overlay}>Projeto 2</div>
                     </div>
                     <a href="https://github.com/Daniel0942/Ceu_Noturno_Mistico" target="blank"><Button txt="Repositório"/></a>
                     <a href="https://ceu-noturno-mistico.vercel.app" target="blank"><Button txt="Site"/></a>
