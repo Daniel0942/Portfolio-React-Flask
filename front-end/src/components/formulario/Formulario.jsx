@@ -49,16 +49,16 @@ function Formulario() {
             <Interface>
                 <form onSubmit={Enviar}> {/* será aqui o evento */}
                     <input type="text" placeholder="Seu Nome Completo" 
-                    onChange={(e)=> setNome(e.target.value)} required/>
+                    onChange={(e)=> setNome(e.target.value)} value={setNome} required/>
 
                     <input type="text" placeholder="Seu E-mail" 
-                    onChange={(e)=> setEmail(e.target.value)} required/>
+                    onChange={(e)=> setEmail(e.target.value)} value={setEmail} required/>
 
                     <input type="number" placeholder="Seu Contato" 
-                    onChange={(e)=> setContato(e.target.value)} required/>
+                    onChange={(e)=> setContato(e.target.value)} value={setContato} required/>
 
                     <textarea  placeholder="Sua Mensagem" 
-                    onChange={(e)=> setMsg(e.target.value)}></textarea>
+                    onChange={(e)=> setMsg(e.target.value)} value={setMsg}></textarea>
                     <Button txt="Enviar"/>
                 </form>
             </Interface>
