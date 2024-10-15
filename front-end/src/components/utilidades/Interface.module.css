@@ -19,3 +19,10 @@
 .flex-wrap {
     flex-wrap: wrap;
 }
+
+/* Responsividade */
+@media screen and (max-width:1440px) {
+    .interface {
+        flex-direction: column;
+    }
+}

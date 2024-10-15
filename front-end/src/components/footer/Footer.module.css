@@ -7,6 +7,9 @@
     & .icones_logo, .icones_link, .icones_email {
         padding: 20px 0px;
     }
+    & .icones_link svg {
+        font-size: 22px;
+    }
 
     & .linha {
         border-top: 2px solid #61DAFB;
@@ -64,6 +67,8 @@
 }
 
 /* Responsivo */
-@media screen and (max-width: 1440px){
-    
+@media screen and (max-width: 1440px) {
+    .icones_logo, .icones_link {
+        margin: 0 auto;
+    }
 }

@@ -39,5 +39,7 @@
 
 /* Responsivo */
 @media screen and (max-width: 1440px) {
-    
+    .formulario div form {
+        width: 390px;
+    }
 }

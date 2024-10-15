@@ -19,9 +19,9 @@
 .caixa_txt h1{
     border-right: 4px solid #61DAFB;  /* pra ficar parecendo que tá digitando */
     white-space: nowrap;
-    width: 38ch;    /* quantidade de caracteres, coloque um background antes pra ver */
+    width: 21ch;    /* quantidade de caracteres, coloque um background antes pra ver */
     overflow: hidden;  /* elementos vazados não aparecem */
-    animation: exibição 2s steps(38) 1,animaMarcador 0.5s infinite;
+    animation: exibição 2s steps(21) 1,animaMarcador 0.5s infinite;
     animation-delay: 1.5s;   /* delay antes de começar a animação */
 }
 @keyframes exibição {
@@ -29,7 +29,7 @@
         width: 0;
     }
     100% {
-        width: 38ch;
+        width: 21ch;
     }
 }
 @keyframes animaMarcador {
@@ -54,5 +54,16 @@
 
 /* responsividade */
 @media screen and (max-width: 1440px) {
-    
+    .topoDoSite .caixa_txt {
+        margin-top: 20px;
+        width: 440px;
+        height: 100%;
+        margin: auto;
+    }
+    .foto {
+        margin:  25px auto;
+        & img {
+            width: 150px;
+        }
+    }
 }

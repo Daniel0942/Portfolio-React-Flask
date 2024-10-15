@@ -114,5 +114,23 @@
 }
 
 @media screen and (max-width: 1440px) {
-    
+    .container {
+        margin-top: 20px;
+        padding: 20px;
+
+        & div {
+            gap: 15px;
+
+            & .icones_logo {
+                margin: 0 auto;
+                & svg {
+                    font-size: 75px;
+                    padding: 0 2px;
+                }
+            }
+            & .menu {
+                margin: 0 auto;
+            }
+        }            
+    }
 }
