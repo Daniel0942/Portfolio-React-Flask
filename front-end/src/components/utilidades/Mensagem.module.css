@@ -1,0 +1,15 @@
+.geral {
+    padding: 20px 0;
+    & p {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+.sucesso {
+    background-color: #008000b2;
+    box-shadow: 5px 3px 5px #00800057;
+}
+.erro {
+    background-color: #c92f3e;
+    box-shadow: 5px 3px 5px #dc354676;
+}

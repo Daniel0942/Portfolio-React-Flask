@@ -17,4 +17,12 @@ def criarTabela():
     conectar.commit()
     conectar.close()
 
+def apagarDados(id):
+    conectar = conexao()
+    cursor = conectar.cursor()
+    cursor.execute("DELETE FROM users WHERE id = ? ", (id,))
+    conectar.commit()
+    conectar.close()
+
 #criarTabela()
+#apagarDados(1)
