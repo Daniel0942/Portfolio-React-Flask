@@ -11,9 +11,9 @@ function Formulario() {
     let [msg, setMsg] = useState()
 
     function Enviar(e) { //função de enviar o form
+        e.preventDefault()
         let novaMsg = {nome, email, contato, msg}
 
-        e.preventDefault()
         axios.post("https://localhost:5000/api", novaMsg)
         .then(response => {
             (console.log(response.data))
