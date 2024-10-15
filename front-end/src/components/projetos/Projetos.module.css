@@ -75,3 +75,9 @@
 .overlay:hover {
     opacity: 1;
 }
+
+
+/* responsividade */
+@media screen and (max-width: 1440px) {
+    
+}

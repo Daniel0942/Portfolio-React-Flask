@@ -62,3 +62,8 @@
         tranform: scale(1.20);
     }
 }
+
+/* Responsivo */
+@media screen and (max-width: 1440px){
+    
+}
