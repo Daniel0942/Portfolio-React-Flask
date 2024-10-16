@@ -3,7 +3,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {
-    "origins": ["http://localhost:3000", "https://portfolio-react-flask-two.vercel.app"],
+    "origins": ["https://portfolio-react-flask-two.vercel.app"],
     "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     "allow_headers": ["Content-Type", "Authorization"]
 }})
