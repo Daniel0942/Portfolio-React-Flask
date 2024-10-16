@@ -56,9 +56,8 @@
 @media screen and (max-width: 1440px) {
     .topoDoSite .caixa_txt {
         margin-top: 20px;
-        width: 440px;
+        width: 380px;
         height: 100%;
-        margin: auto;
     }
     .foto {
         margin:  25px auto;
