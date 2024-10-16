@@ -1,6 +1,7 @@
 from setup import app
 from flask import request, jsonify
 from setup.models.table import conexao
+from setup.emails import enviarEmail
 
 @app.route("/")
 def index():
@@ -31,6 +32,7 @@ def receberDados():
     cursor.execute("INSERT INTO users (nome, email, contato, msg) VALUES (?, ?, ?, ?)", (nome, email, contato, msg))
     conectar.commit()
     conectar.close()
+    enviarEmail(nome, email, contato, msg)
     # Retornar a nova tarefa criada com status 201 (Criado)
     nova_tarefa = {
         "id": cursor.lastrowid,  # Pega o ID da última tarefa inserida
