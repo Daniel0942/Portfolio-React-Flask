@@ -79,5 +79,8 @@
 
 /* responsividade */
 @media screen and (max-width: 1440px) {
-    
+    .container .projeto_box {
+        width: 300px;
+        height: 400px;
+    }
 }
