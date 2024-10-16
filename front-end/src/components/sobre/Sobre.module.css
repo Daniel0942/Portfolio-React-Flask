@@ -24,7 +24,7 @@
 /* Responsividade */
 @media screen and (max-width: 1440px) {
     .caixa_txt {
-        width: 400px;
+        width: 340px;
         height: 100%;
     }
 }
