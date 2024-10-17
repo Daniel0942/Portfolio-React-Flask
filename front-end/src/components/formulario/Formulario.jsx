@@ -19,11 +19,12 @@ function Formulario() {
 
     function Enviar(e) { //função de enviar o form
         e.preventDefault()
+        setLoading(true) // ativar Loading
         setSucessoMSG(false); // Ocultar mensagens anteriores
         setErroMSG(false); // Ocultar mensagens anteriores
         let novaMsg = {nome, email, contato, msg}
-// https://portfolio-react-flask.onrender.com
-        axios.post("http://localhost:5000/api", novaMsg)
+
+        axios.post("https://portfolio-react-flask.onrender.com/api", novaMsg)
         .then(response => {
             console.log(response.data)
             setNome("") //Limpar Formulario pós enviado
@@ -35,7 +36,7 @@ function Formulario() {
             setTimeout(() => {
                 setSucessoMSG(false);
             }, 3000);
-            setLoading(true) // ativar o Loading
+            setLoading(false) // Remover loading se os dados forem enviados
         })
         .catch(error => {
             console.error("Ocorreu um erro ao enviar nova msg", error)
@@ -44,9 +45,9 @@ function Formulario() {
             setTimeout(() => {
                 setErroMSG(false);
             }, 3000);
-            setLoading(true) // ativar o Loading
-        })
-        
+            setLoading(false) // Remover loading se os dados derem erro !
+
+        })   
     }
     return (
         <section className={styles.formulario}>
@@ -67,7 +68,8 @@ function Formulario() {
                     <Button txt="Enviar"/>
                 </form>
             </Interface>
-            {Loading && <Loading/>}
+            {loading && <Loading/>}
+
             {sucessoMSG && <Mensagem 
             txt="Mensagem enviado com sucesso !" tipo="sucesso"/>}
 
