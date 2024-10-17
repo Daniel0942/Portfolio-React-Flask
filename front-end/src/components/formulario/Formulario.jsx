@@ -4,6 +4,7 @@ import Mensagem from "../../components/utilidades/Mensagem"
 import styles from "./Formulario.module.css"
 import axios from "axios"
 import { useState } from "react"
+import Loading from "../../components/utilidades/Loading"
 
 function Formulario() {
     let [nome, setNome] = useState("")
@@ -13,14 +14,16 @@ function Formulario() {
     // mensagens de sucesso e erro
     let [sucessoMSG, setSucessoMSG] = useState(false) 
     let [erroMSG, setErroMSG] = useState(false) 
+    // loading 
+    let [loading, setLoading] = useState(false)
 
     function Enviar(e) { //função de enviar o form
         e.preventDefault()
         setSucessoMSG(false); // Ocultar mensagens anteriores
         setErroMSG(false); // Ocultar mensagens anteriores
         let novaMsg = {nome, email, contato, msg}
-
-        axios.post("https://portfolio-react-flask.onrender.com/api", novaMsg)
+// https://portfolio-react-flask.onrender.com
+        axios.post("http://localhost:5000/api", novaMsg)
         .then(response => {
             console.log(response.data)
             setNome("") //Limpar Formulario pós enviado
@@ -32,6 +35,7 @@ function Formulario() {
             setTimeout(() => {
                 setSucessoMSG(false);
             }, 3000);
+            setLoading(true) // ativar o Loading
         })
         .catch(error => {
             console.error("Ocorreu um erro ao enviar nova msg", error)
@@ -40,6 +44,7 @@ function Formulario() {
             setTimeout(() => {
                 setErroMSG(false);
             }, 3000);
+            setLoading(true) // ativar o Loading
         })
         
     }
@@ -62,7 +67,7 @@ function Formulario() {
                     <Button txt="Enviar"/>
                 </form>
             </Interface>
-
+            {Loading && <Loading/>}
             {sucessoMSG && <Mensagem 
             txt="Mensagem enviado com sucesso !" tipo="sucesso"/>}
 
