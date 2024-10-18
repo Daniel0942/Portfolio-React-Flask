@@ -1,5 +1,8 @@
 import mysql.connector
 import os
+from dotenv import load_dotenv  # biblioteca que carrega variável de ambiente
+
+load_dotenv()
 
 # abrindo conexões
 def conexao():
@@ -41,4 +44,4 @@ def apagar(id):
 
 #inserirValores()
 #mostrarTudo()
-#apagar(2)
+#apagar(4)
