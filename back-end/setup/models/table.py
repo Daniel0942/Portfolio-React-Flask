@@ -1,18 +1,22 @@
 import mysql.connector
-import os
-from dotenv import load_dotenv  # biblioteca que carrega variável de ambiente
+#import os
+#from dotenv import load_dotenv  # biblioteca que carrega variável de ambiente
 
-load_dotenv()
+#load_dotenv()
 
-# abrindo conexões
+# conexão com o banco do Railway
 def conexao():
-    conectar = mysql.connector.connect(
-        host = os.getenv("host"),
-        user = os.getenv("user"),
-        password = os.getenv("password"),
-        database = os.getenv("database")
-    )
-    return conectar
+    try:
+        conectar = mysql.connector.connect(
+            host = "mysql-68ec7f9b.railway.internal",
+            user = "root",
+            password = "uVxBYgNVWdFtRjWltteYsXrKVZRomvxo",
+            database = "railway"
+        )
+        print("conexão bem sucedida")
+        return conectar
+    except Exception as e:
+        print(str(e))
 
 def inserirValores():
     conectar = conexao()
@@ -45,3 +49,4 @@ def apagar(id):
 #inserirValores()
 #mostrarTudo()
 #apagar(4)
+conexao()
