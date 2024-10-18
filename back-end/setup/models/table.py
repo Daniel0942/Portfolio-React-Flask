@@ -39,4 +39,4 @@ def inserirValores():
 #criarTabela()
 #criarTabela()
 #apagarDados(1)
-inserirValores()
+#inserirValores()
