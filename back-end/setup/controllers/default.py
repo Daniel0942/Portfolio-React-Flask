@@ -12,9 +12,9 @@ def index():
 def converter():
     conectar = conexao()
     cursor = conectar.cursor()
-    cursor.execute("SELECT * FROM users")
-    tabela_users = cursor.fetchall()
-    return jsonify(tabela_users)
+    cursor.execute("SELECT * FROM formulario")
+    tabela_form = cursor.fetchall()
+    return jsonify(tabela_form)
 
 # Pegar dados que o Front-end Mandou pra cá, e enviar para o Banco de dados
 @app.route("/api", methods=["POST"])
@@ -29,7 +29,9 @@ def receberDados():
     # enviar dados para o banco de dados
     conectar = conexao()
     cursor = conectar.cursor()
-    cursor.execute("INSERT INTO users (nome, email, contato, msg) VALUES (?, ?, ?, ?)", (nome, email, contato, msg))
+    comando = "INSERT INTO formulario (nome, email, contato, msg) VALUES (%s, %s, %s, %s)"
+    dados = nome, email, contato, msg
+    cursor.execute(comando, dados)
     conectar.commit()
     conectar.close()
     enviarEmail(nome, email, contato, msg)

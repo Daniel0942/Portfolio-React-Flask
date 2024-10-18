@@ -23,8 +23,8 @@ function Formulario() {
         setSucessoMSG(false); // Ocultar mensagens anteriores
         setErroMSG(false); // Ocultar mensagens anteriores
         let novaMsg = {nome, email, contato, msg}
-
-        axios.post("https://portfolio-react-flask.onrender.com/api", novaMsg)
+// https://portfolio-react-flask.onrender.com
+        axios.post("http://127.0.0.1:5000/api", novaMsg)
         .then(response => {
             console.log(response.data)
             setNome("") //Limpar Formulario pós enviado
