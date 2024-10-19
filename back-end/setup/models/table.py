@@ -1,7 +1,7 @@
 import sqlite3
 
 def conexao():
-    conectar = sqlite3.connect("Formulario.db")
+    conectar = sqlite3.connect("back-end/Formulario.db") # especifiquei o diretório
     return conectar
 
 def criarTabela():
@@ -24,5 +24,14 @@ def apagarDados(id):
     conectar.commit()
     conectar.close()
 
+def inserirDados():
+    conectar = conexao()
+    cursor = conectar.cursor()
+    cursor.execute("INSERT INTO users (nome, email, contato, msg) VALUES (?, ?, ?, ?)", ("Lili", "lili49@gmail.com", 7934424423, "Testando projeto novo"))
+    conectar.commit()
+    conectar.close()
+
+
 #criarTabela()
 #apagarDados(1)
+#inserirDados()
