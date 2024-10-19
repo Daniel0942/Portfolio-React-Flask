@@ -49,27 +49,14 @@ function Formulario() {
             })
     }
 
-    // Função Pixels do facebook
-    useEffect(() => {
-        const handleButtonClick = () => {
-            // Disparar o evento 'Contato' no Facebook Pixel
-            fbq('track', 'Contact', {
-                content_name: 'Formulário de Contato',
-                status: 'Clique no botão de contato'
-            });
-        };
-        const buttonElement = document.getElementById('PixelsButton');
-        if (buttonElement) {
-            buttonElement.addEventListener('click', handleButtonClick);
-        }
-        // Cleanup function to remove the event listener
-        return () => {
-            if (buttonElement) {
-                buttonElement.removeEventListener('click', handleButtonClick);
-            }
-        };
-    }, []); // O array vazio garante que o useEffect rode apenas uma vez
-
+    // Disparar o evento 'Contato' no Facebook Pixel
+    function contatoPIXEL() {
+        fbq('track', 'Contact', {
+            content_name: 'Formulário de Contato',
+            status: 'Clique no botão de contato'
+        });
+    }
+    
     return (
         <section className={styles.formulario}>
             <h2>FALA <span>COMIGO.</span></h2>
@@ -86,7 +73,7 @@ function Formulario() {
 
                     <textarea placeholder="Sua Mensagem"
                         onChange={(e) => setMsg(e.target.value)} value={msg}></textarea>
-                    <Button txt="Enviar" id_Pixels="PixelsButton" />
+                    <Button txt="Enviar" onClick={contatoPIXEL}/>
                 </form>
             </Interface>
             {loading && <Loading />}
