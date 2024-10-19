@@ -1,6 +1,6 @@
 import sqlite3
 
-def conexao():
+def conexao():               # (back-end/) tbm pode especificar o diretório
     conectar = sqlite3.connect("Formulario.db") 
     return conectar
 
@@ -32,5 +32,5 @@ def inserirDados():
     conectar.close()
 
 #criarTabela()
-#apagarDados(1)
+#apagarDados(3)
 #inserirDados()
