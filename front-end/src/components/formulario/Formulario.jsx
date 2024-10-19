@@ -48,8 +48,6 @@ function Formulario() {
             setLoading(false) // Remover loading se os dados derem erro !
         })   
     }
-
-    // function Pixels 
     
     return (
         <section className={styles.formulario}>

@@ -47,24 +47,20 @@
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" /></noscript>
+      src="https://www.facebook.com/tr?id=562432869516528&ev=PageView&noscript=1" /></noscript>                          <!--O id aqui tbm-->
   <!-- Fim Facebook Pixel Code -->
-
-  <!-- Pixels Facebook -->
-  <script>
-    // Certifique-se de que o Pixel está inicializado
-    fbq('track', 'PageView'); // Para rastrear a visualização da página
-  </script>
 
   <!-- Código para rastrear cliques no botão de contato -->
   <script type="text/javascript">
-    document.getElementById('PixelsButton').addEventListener('click', function () {
-      // Disparar o evento 'Contato'
-      fbq('track', 'Contact', {
-        content_name: 'Formulário de Contato', // Parâmetro extra para identificar o evento
-        status: 'Clique no botão de contato'
-      });
-    }, false);
+    window.onload = function() {
+      document.getElementById('PixelsButton').addEventListener('click', function () {
+        // Disparar o evento 'Contato'
+        fbq('track', 'Contact', {
+          content_name: 'Formulário de Contato', // Parâmetro extra para identificar o evento
+          status: 'Clique no botão de contato'
+        })
+      })
+    }
   </script>
   <!-- Fim Pixels -->
 
