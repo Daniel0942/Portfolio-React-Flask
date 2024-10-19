@@ -46,9 +46,11 @@ function Formulario() {
                 setErroMSG(false);
             }, 3000);
             setLoading(false) // Remover loading se os dados derem erro !
-
         })   
     }
+
+    // function Pixels 
+    
     return (
         <section className={styles.formulario}>
             <h2>FALA <span>COMIGO.</span></h2>
@@ -65,7 +67,7 @@ function Formulario() {
 
                     <textarea  placeholder="Sua Mensagem" 
                     onChange={(e)=> setMsg(e.target.value)} value={msg}></textarea>
-                    <Button txt="Enviar"/>
+                    <Button txt="Enviar" id_Pixels="PixelsButton"/>
                 </form>
             </Interface>
             {loading && <Loading/>}
