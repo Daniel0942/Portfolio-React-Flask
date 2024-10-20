@@ -25,6 +25,7 @@ function Formulario() {
         let novaMsg = { nome, email, contato, msg }
 
         axios.post("https://portfolio-react-flask.onrender.com/api", novaMsg)
+<<<<<<< HEAD
             .then(response => {
                 console.log(response.data)
                 setNome("") //Limpar Formulario pós enviado
@@ -61,6 +62,32 @@ function Formulario() {
         }
     }
     
+=======
+        .then(response => {
+            console.log(response.data)
+            setNome("") //Limpar Formulario pós enviado
+            setEmail("") 
+            setContato("")
+            setMsg("")
+            setSucessoMSG(true) // ativar msg de sucesso, após enviar dados
+            // Remover mensagem de sucesso após 3 segundos
+            setTimeout(() => {
+                setSucessoMSG(false);
+            }, 3000);
+            setLoading(false) // Remover loading se os dados forem enviados
+        })
+        .catch(error => {
+            console.error("Ocorreu um erro ao enviar nova msg", error)
+            setErroMSG(true)  // ativar msg de erro, caso der erro
+            // Remover mensagem de erro após 3 segundos
+            setTimeout(() => {
+                setErroMSG(false);
+            }, 3000);
+            setLoading(false) // Remover loading se os dados derem erro !
+
+        })   
+    }
+>>>>>>> parent of 4c25cda (Com pixels implementado de evento contato)
     return (
         <section className={styles.formulario}>
             <h2>FALA <span>COMIGO.</span></h2>
@@ -75,9 +102,15 @@ function Formulario() {
                     <input type="number" placeholder="Seu Contato"
                         onChange={(e) => setContato(e.target.value)} value={contato} required />
 
+<<<<<<< HEAD
                     <textarea placeholder="Sua Mensagem"
                         onChange={(e) => setMsg(e.target.value)} value={msg}></textarea>
                     <Button txt="Solicitar Orçamento" onClick={contatoPIXEL}/>
+=======
+                    <textarea  placeholder="Sua Mensagem" 
+                    onChange={(e)=> setMsg(e.target.value)} value={msg}></textarea>
+                    <Button txt="Enviar"/>
+>>>>>>> parent of 4c25cda (Com pixels implementado de evento contato)
                 </form>
             </Interface>
             {loading && <Loading />}
