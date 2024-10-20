@@ -73,7 +73,7 @@ function Formulario() {
 
                     <textarea placeholder="Sua Mensagem"
                         onChange={(e) => setMsg(e.target.value)} value={msg}></textarea>
-                    <Button txt="Solicitar orçamento" onClick={contatoPIXEL}/>
+                    <Button txt="Solicitar orçamento" onClick={contatoPIXEL} PIXEL="PixelButton"/>
                 </form>
             </Interface>
             {loading && <Loading />}
