@@ -51,10 +51,14 @@ function Formulario() {
 
     // Disparar o evento 'Contato' no Facebook Pixel
     function contatoPIXEL() {
-        fbq('track', 'Contact', {
-            content_name: 'Formulário de Contato',
-            status: 'Clique no botão de contato'
-        });
+        if (typeof fbq === 'function') {
+            fbq('track', 'Contact', {
+                content_name: 'Formulário de Contato',
+                status: 'Clique no botão de contato'
+            });
+        } else {
+            console.error("fbq não está definido.");
+        }
     }
     
     return (
@@ -73,7 +77,7 @@ function Formulario() {
 
                     <textarea placeholder="Sua Mensagem"
                         onChange={(e) => setMsg(e.target.value)} value={msg}></textarea>
-                    <Button txt="Enviar" onClick={contatoPIXEL}/>
+                    <Button txt="Solicitar Orçamento" onClick={contatoPIXEL}/>
                 </form>
             </Interface>
             {loading && <Loading />}
