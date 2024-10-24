@@ -24,7 +24,7 @@ function Footer() {
                 </nav>
 
                 <div className={styles.icones_link}>
-                    <a href="https://wa.me/5579996746102" target="blank">
+                    <a href="https://wa.me/5579991488533" target="blank">
                         <Button txt={<FaWhatsapp />} />
                     </a>
                     <a href="https://github.com/Daniel0942" target="blank">

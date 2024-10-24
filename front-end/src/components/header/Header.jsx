@@ -29,7 +29,7 @@ function Header() {
                 </nav>
 
                 <div className={styles.contato}>
-                    <a href="https://wa.me/5579996746102" target="blank">
+                    <a href="https://wa.me/5579991488533" target="blank">
                         <Button txt="Contato"/>
                     </a>
                 </div>
