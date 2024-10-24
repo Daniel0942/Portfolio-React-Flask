@@ -19,7 +19,8 @@ function Especialidades() {
                 <div className={styles.box}>
                     <SiSqlite />
                     <h3>Banco de Dados</h3>
-                    <li><strong>SQLite3: </strong>Utilização de bancos de dados leves e eficientes, ideais para protótipos rápidos e aplicações com menor escala.</li>
+                    <li><strong>MySQL: </strong>Utilização de banco de dados externo e mais robusto, ideal pra aplicações com maior escala</li>
+                    <li><strong>SQLite3: </strong>Utilização de banco de dados interno leve e eficiente, ideal para protótipo rápido e aplicações com menor escala.</li>
                 </div>
                 <div className={styles.box}>
                     <FaRobot/>
