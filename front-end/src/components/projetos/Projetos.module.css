@@ -59,18 +59,6 @@
 
     &:hover {
         transform: scale(1.09);
-        animation: Slides 4s ease-in-out infinite;
-    }
-}
-@keyframes Slides {
-    0% {
-        background-image: url("../../img/E-commerce.png")
-    }
-    50% {
-        background-image: url("../../img/E-commerce_login.png")
-    }
-    100% {
-        background-image: url("../../img/E-commerce.png")
     }
 }
 .overlay {
