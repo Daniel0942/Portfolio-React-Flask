@@ -12,8 +12,9 @@ def index():
 def converter():
     conectar = conexao()
     cursor = conectar.cursor()
-    cursor.execute("SELECT * FROM users")
+    cursor.execute("SELECT * FROM clientes")
     tabela_users = cursor.fetchall()
+    print(tabela_users)
     return jsonify(tabela_users)
 
 # Pegar dados que o Front-end Mandou pra cá, e enviar para o Banco de dados
@@ -21,15 +22,17 @@ def converter():
 def receberDados():
     # receber dados do cliente em formato json
     novaMsg = request.get_json()
+
     # extrair dados
     nome =  novaMsg.get("nome")
     email = novaMsg.get("email")
     contato = novaMsg.get("contato")
     msg = novaMsg.get("msg")
-    # enviar dados para o banco de dados
+
+    # enviar dados para o banco de dados e enviar o email
     conectar = conexao()
     cursor = conectar.cursor()
-    cursor.execute("INSERT INTO users (nome, email, contato, msg) VALUES (?, ?, ?, ?)", (nome, email, contato, msg))
+    cursor.execute("INSERT INTO clientes (nome, email, contato, msg) VALUES (%s, %s, %s, %s)", (nome, email, contato, msg))
     conectar.commit()
     conectar.close()
     enviarEmail(nome, email, contato, msg)
