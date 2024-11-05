@@ -3,6 +3,7 @@ import styles from "./Projetos.module.css"
 import listaDeTarefasImg from '../../img/lista_de_tarefas.png'
 import Button from "../../components/utilidades/Button"
 import ceunoturnomistico from '../../img/ceu_noturno_mistico.png'
+import Ecommerce from '../../img/E-commerce.png'
 
 function Projetos() {
     return (
@@ -26,6 +27,16 @@ function Projetos() {
                         <div className={styles.overlay}>Projeto 2</div>
                     </div>
                     <a href="https://github.com/Daniel0942/Ceu_Noturno_Mistico" target="blank"><Button txt="Repositório"/></a>
+                    <a href="#" target="blank"><Button txt="Site"/></a>
+                </div>
+
+                <div className={styles.container}>
+                    <div
+                    className={`${styles.projeto_box} ${styles.terceiro}`}
+                    style={{ backgroundImage: `url(${Ecommerce})`}}>
+                        <div className={styles.overlay}>Projeto 3</div>
+                    </div>
+                    <a href="https://github.com/Daniel0942/E-commerce" target="blank"><Button txt="Repositório"/></a>
                     <a href="#" target="blank"><Button txt="Site"/></a>
                 </div>
             </Interface>

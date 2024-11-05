@@ -28,8 +28,8 @@
 /* box dos projetos */
 .container .projeto_box {
     margin-top: 35px;
-    width: 360px;
-    height: 460px;
+    width: 320px;
+    height: 420px;
     background-size: cover;    /* Ajusta a imagem para cobrir completamente a box */
     border-radius: 40px;
     position: relative;
@@ -50,11 +50,29 @@
     background-position: 100% 0%;  /* pra começar do lado esquerdo */
     
     &:hover {
-    background-position: 100% 100%;   /* pra ir pro lado direito*/
+    background-position: 100% 100%;   /* pra ir pra baixo*/
     transform: scale(1.07);
     }
 }
+.terceiro {
+    background-position: 50% 50%;
 
+    &:hover {
+        transform: scale(1.09);
+        animation: Slides 4s ease-in-out infinite;
+    }
+}
+@keyframes Slides {
+    0% {
+        background-image: url("../../img/E-commerce.png")
+    }
+    50% {
+        background-image: url("../../img/E-commerce_login.png")
+    }
+    100% {
+        background-image: url("../../img/E-commerce.png")
+    }
+}
 .overlay {
     background-color: #000000b8;
     color: white;
@@ -80,7 +98,7 @@
 /* responsividade */
 @media screen and (max-width: 1440px) {
     .container .projeto_box {
-        width: 300px;
-        height: 400px;
+        width: 260px;
+        height: 360px;
     }
 }
