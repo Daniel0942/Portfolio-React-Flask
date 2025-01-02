@@ -28,8 +28,8 @@
 /* box dos projetos */
 .container .projeto_box {
     margin-top: 35px;
-    width: 320px;
-    height: 420px;
+    width: 300px;
+    height: 400px;
     background-size: cover;    /* Ajusta a imagem para cobrir completamente a box */
     border-radius: 40px;
     position: relative;
